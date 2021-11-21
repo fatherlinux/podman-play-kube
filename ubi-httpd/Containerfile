@@ -1,0 +1,4 @@
+FROM ubi9-beta/ubi
+RUN yum install -y httpd
+EXPOSE 80
+CMD ["/usr/sbin/httpd", "-X", "-C", "ServerName www.example.com"]
