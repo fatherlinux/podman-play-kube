@@ -6,6 +6,7 @@ This demo makes it super easy to test out the new Podman Play functionality whic
 Now, just bring up the environment with Podman 3.4 or newer:
 
 ```cd podman-play-kube```
+
 ```podman play kube ubi-httpd.yaml```
 
 Test that the pod is running:
@@ -19,4 +20,5 @@ When you are done testing, bring the environment back down:
 Clear out the environment:
 
 ```podman pod kill -a```
+
 ```podman pod rm -a``` 
