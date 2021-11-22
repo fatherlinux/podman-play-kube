@@ -7,15 +7,15 @@ kind: Pod
 metadata:
   creationTimestamp: "2021-11-21T17:07:19Z"
   labels:
-    app: musingtu
-  name: musingtu
+    app: webserver-test
+  name: webserver-test
 spec:
   containers:
   - env:
     - name: container
       value: oci
     image: localhost/ubi-httpd:latest
-    name: musingtu
+    name: httpd
     ports:
     - containerPort: 80
       hostPort: 8080
