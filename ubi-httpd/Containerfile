@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9-beta/ubi
+FROM registry.access.redhat.com/ubi8/ubi
 RUN yum install -y httpd
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-X", "-C", "ServerName www.example.com"]
