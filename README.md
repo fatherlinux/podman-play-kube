@@ -25,12 +25,11 @@ Test that the pod is running:
 
 When you are done testing, bring the environment back down:
 
-```podman play kube --down ubi-httpd.haml```
+```podman play kube --down ubi-httpd.yaml```
 
-Clear out the environment:
+Optional: Clear out the environment. ***WARNING***, this will remove all of your local images:
 
-```podman pod kill -a```
+```podman rmi -a```
 
-```podman pod rm -a``` 
 
 It's that easy. A single command to bring up an environment, and a single command to tear it down. This demo is simple and shows a single pod, but this workflow could be used to develop more complex applications with two, three or 10 pods working in conjunction. In fact, I plan on using this for a side project I am working on where I need Rails, Postgres and Redis all running side by side for an application. More to come soon! 
